@@ -24,23 +24,23 @@ function run_command {
 function start_block {        
     echo ""
     echo ""
-    echo "🚩 $1"    
+    echo "> $1"    
 }
 
 # writes a success message ($1) in a standard format
 function end_block_success {
-    echo "   ✅ $1"
+    echo "   * $1"
 }
 
 # writes an error message ($1) in a standard format and exits the script
 function end_block_failed {
-    echo "   ❌ $1"
+    echo "   X $1"
     exit 1
 }
 
 # writes a line in a block
 function block_msg {
-    echo "   ℹ️ $1"
+    echo "   - $1"
 }
 
 # validates that the given environment variable name ($1) is in the environment - exits the script if not found
