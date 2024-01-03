@@ -2,6 +2,11 @@
 
 CURRENT_DIR=`pwd`
 
+echo "---------------------------------"
+echo $CURRENT_DIR
+ruby -v
+echo "---------------------------------"
+
 if [ -z "$1" ]; then    
     SOURCE="./_site"
 else
