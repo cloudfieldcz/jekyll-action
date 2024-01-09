@@ -86,7 +86,7 @@ function install_gems {
 # Does a simple build of the jekyll site.
 function build_site {
     start_block "Building jekyll site"
-    bundle exec jekyll build --trace > /dev/null || end_block_failed "Jekyll build failed. Exiting..."
+    JEKYLL_ENV=production bundle exec jekyll build > /dev/null || end_block_failed "Jekyll build failed. Exiting..."
     end_block_success "Jekyll build done"
 }
 
